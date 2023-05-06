@@ -32,13 +32,20 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
    </head>
    <body>
       <div class="header_section">
          <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                <!-- <a class="navbar-brand"href="index.html"><img src="images/logo.png"></a> -->
-               <h1 style="color:green;font-style: Poppins;">Eco-Review-Shop</h1>
+               <!-- <h1 style="color:green;font-style: Poppins;">Eco-Review-Shop</h1> -->
+              
+                <h1 class="ml10">
+                  <span class="text-wrapper">
+                    <span class="letters" style="color:green;">Eco-Review-Shop</span>
+                  </span>
+                </h1>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
                </button>
@@ -48,7 +55,7 @@
                         <a class="nav-link" href="index.html" style="margin-right: 50px;">Home</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="about.html" style="margin-right: 50px;">Brands</a>
+                        <a class="nav-link" href="brand.html" style="margin-right: 50px;">Brands</a>
                      </li>
                     
                     
@@ -60,18 +67,13 @@
                      <form class="form-inline my-2 my-lg-0">
                         <div class="login_bt">
                            <ul>
-                              <li><a href="#"><span class="user_icon"><i class="fa fa-user" aria-hidden="true"></i></span>Login</a></li>
+                              <li><a href="#"><span class="user_icon"><i class="fa fa-user" aria-hidden="true"></i></span>Login/Sign Up</a></li>
                               <!-- <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li> -->
                            </ul>
                         </div>
                      </form>
                      <!-- serach bar -->
-                     <div class="input-group rounded">
-                        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-                        <!-- <span class="input-group-text border-0" id="search-addon"> -->
-                          <!-- <i class="fas fa-search"></i> -->
-                        </span>
-                      </div>
+                    
                   </ul>
                   
                   
@@ -229,80 +231,13 @@
             </div>
          </div>
       </div>
-      <!-- coffee section end -->
-      <!-- about section start -->
-      <div class="about_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <h1 class="about_taital">About Our shop</h1>
-                  <div class="bulit_icon"><img src="images/bulit-icon.png"></div>
-               </div>
-            </div>
-           
-         </div>
-      </div>
-      <!-- about section end -->
-      <!-- client section start -->
-     
-      
-      <!-- client section end -->
-      <!-- blog section start -->
-      
-      <!-- blog section end -->
-      <!-- contact section start -->
-      
-      <!-- contact section end -->
-      <!-- footer section start -->
-      <div class="footer_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <h1 class="address_text">Address</h1>
-                  <p class="footer_text">here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use </p>
-                  <div class="location_text">
-                     <ul>
-                        <li>
-                           <a href="#">
-                           <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_10">+01 1234567890</span>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#">
-                           <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">demo@gmail.com</span>
-                           </a>
-                        </li>
-                     </ul>
-                  </div>
-                  <div class="form-group">
-                     <textarea class="update_mail" placeholder="Your Email" rows="5" id="comment" name="Your Email"></textarea>
-                     <div class="subscribe_bt"><a href="#"><img src="images/teligram-icon.png"></a></div>
-                  </div>
+      <!--  section end -->
+   
                </div>
             </div>
          </div>
       </div>
-      <!-- footer section end -->
-      <!-- copyright section start -->
-      <div class="copyright_section">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-6 col-sm-12">
-                  <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://html.design">Free Html Templates</a></p>
-               </div>
-               <div class="col-lg-6 col-sm-12">
-                  <div class="footer_social_icon">
-                     <ul>
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+      
       <!-- copyright section end -->
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
@@ -314,13 +249,24 @@
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
       <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
-    <script>
-        var typed=new Typed(".auto-text",{
-            strings:["Eco-Review-Shop"],
-            typeSpeed:400,
-            backSpeed:400,
-            loop:true
-        })
-    </script>
+      <script>
+      // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml10 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml10 .letter',
+    rotateY: [-90, 0],
+    duration: 1300,
+    delay: (el, i) => 45 * i
+  }).add({
+    targets: '.ml10',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+      </script>
    </body>
 </html>
