@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore the brands</title>
+    <link rel="stylesheet" href="style3.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- font css -->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <style>
+      .header_section {
+    height:700px;
+    width: 100%;
+    float: left;
+    background-image: url("/images/brand.jpg");
+    /* height: auto; */
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+    text-align:center;
+    font-weight: bold;
+}
+h2{
+   font-weight:bold;
+    font-family: 'Poppins';
+}
+.ml10 {
+    position: relative;
+    font-weight: 800;
+    font-size: 2.5em;
+  }
+  
+  .ml10 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    /* padding-top: 0.2em; */
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml10 .letter {
+    display: inline-block;
+    line-height: 1em;
+    transform-origin: 0 0;
+  }  
+        
+    </style>
+</head>
+
+<body>
+   <div class="header_section">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+           <!-- <a class="navbar-brand"href="index.html"><img src="images/logo.png"></a> -->
+           <!-- <h1 style="color:green;font-style: Poppins;">Eco-Review-Shop</h1> -->
+           <h1 class="ml10">
+            <span class="text-wrapper">
+              <span class="letters" style="color:green;">Eco-Review-Shop</span>
+            </span>
+          </h1>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                 <li class="nav-item active">
+                    <a class="nav-link" href="/" style="margin-right: 50px;">Home</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="/brands" style="margin-right: 50px;">Brands</a>
+                 </li>
+                 <li class="nav-item">
+                  <a class="nav-link" href="/company" style="margin-right: 50px;">Post</a>
+               </li>
+                
+                
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="/#contact" style="margin-right: 50px;">Contact Us</a>
+                </li>
+               
+                
+              </ul>
+              
+              
+           </div>
+        </nav>
+     </div>
+    <!-- <p style="background-image: url('images/green.jpg');"> -->
+   
+    <div class="container" style=" margin-top:100px; text-align: center; font-weight:bold;">
+    <h2 >Search Your Choice</h2>
+    <br>
+      <span style="align-content:center;">
+    <div class="input-group rounded" style="margin-left:370px;">
+        <span style="text-align:center;">
+            <p style="text-align:center;font-weight:bold;">Enter the item type/brand you are looking for</p>
+            <br>
+               <form action="/searching" method="POST"> 
+               <div class="input-group mb-3" >
+               <input type="text" class="form-control rounded" style="border:2px solid rgb(236, 217, 217);" name="searchInput" <% if (search != '') { %> value="<%= search %>" <% } %>>
+              <span class="input-group-text border-0" id="search-addon">
+               <button><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+            </form>  
+            </span>      
+      </div>
+      </span>
+      <span style="font-weight:bold;font-family:Poppins;font-size:20px;">
+      <% if (data != null) { data.forEach( item => { %>
+         <div class="d-flex flex-row justify-content-between mb-3">
+   
+               <div class="d-flex flex-column p-3">
+                 <b><p style="font-size:30px;"><%= item.name %></p></b>
+                 <p><%= item.description %></p>
+                 <p>The item type is: <%= item.itemtype %></p>
+                 <p>The upvotes are: <%= item.rating %></p>
+                 <p><a href="/comments/<%= item.name %>&<%= item._id %>">View Comments</a></p>
+               </div>
+               
+               <div class="menu-code pt-4 pl-4">
+               <a href="<%= item.url %>" target="_blank">
+                 <span class="mb-2">
+                   Visit
+                 </span>
+               </a>
+            
+             </div>
+             
+         </div>
+         <hr style="height:5px;background-color: black;">
+         <% }); } %>
+      </span>
+    
+</div>
+</div>
+<script>
+   // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml10 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+.add({
+ targets: '.ml10 .letter',
+ rotateY: [-90, 0],
+ duration: 1300,
+ delay: (el, i) => 45 * i
+}).add({
+ targets: '.ml10',
+ opacity: 0,
+ duration: 1000,
+ easing: "easeOutExpo",
+ delay: 1000
+});
+   </script>
+</body>
+</html>

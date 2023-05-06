@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post your blog</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- font css -->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <style>
+      .header_section {
+    height:700px;
+    width: 100%;
+    float: left;
+    background-image: url(images/green.jpg);
+    /* height: auto; */
+    background-size: cover;
+    height:100%;
+    background-repeat: no-repeat;
+    font-weight:bold;
+    font-family: 'Poppins';
+}
+.ml10 {
+    position: relative;
+    font-weight: 800;
+    font-size: 2.5em;
+  }
+  
+  .ml10 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    /* padding-top: 0.2em; */
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml10 .letter {
+    display: inline-block;
+    line-height: 1em;
+    transform-origin: 0 0;
+  }  
+        
+    </style>
+       
+        
+    </style>
+</head>
+
+<body>
+   <div class="header_section">
+      <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg navbar-light ">
+             <!-- <a class="navbar-brand"href="index.html"><img src="images/logo.png"></a> -->
+             <!-- <h1 style="color:green;font-style: Poppins;">Eco-Review-Shop</h1> -->
+             <h1 class="ml10">
+              <span class="text-wrapper">
+                <span class="letters" style="color:green;">Eco-Review-Shop</span>
+              </span>
+            </h1>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                   <li class="nav-item active">
+                      <a class="nav-link" href="/" style="margin-right: 50px;">Home</a>
+                   </li>
+                   <li class="nav-item">
+                      <a class="nav-link" href="/brands" style="margin-right: 50px;">Brands</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="/company" style="margin-right: 50px;">Post</a>
+                  </li>
+                  
+                  
+                 
+                  <li class="nav-item">
+                      <a class="nav-link" href="/#contact" style="margin-right: 50px;">Contact Us</a>
+                  </li>
+                 
+                  
+                </ul>
+                
+                
+             </div>
+          </nav>
+       </div>
+    <!-- <p style="background-image: url('images/green.jpg');"> -->
+       
+    <div class="container" style=" margin-top:50px; text-align: center;">
+    <h2 >Post Your Own Brand</h2>
+    <h5 style="margin-top: 10px;">Start Your World!</h5>
+
+    <div class="login">
+    <form id="login" method="POST" action="/joincompany">
+        <!-- <p style="color:white;">Required fields are followed by *</p> -->
+        <label><b>Company Name</b></label>
+        <br>
+        <input type="text" name="name" id="name" style="height:100%;width:500px; padding-top: 10px; padding-bottom: 10px;" required>
+        <br><br>
+        <label><b>Type of Items Sold: (i.e Clothing, Footwear , Cosmetics )</b></label>
+        <br>
+        <input type="text" name="itemtype" id="itemtype" style="height:100%;width:500px; padding-top: 10px; padding-bottom: 10px;" required>
+        <br>
+        <label style="margin-top:50px; " ><b>Description</b></label>
+        <br>
+        <input type="Description" name="description" id="description" style="height:100%;width:500px; padding-top: 20px; padding-bottom: 20px;" required>
+<br><br>
+        <label><b>URL</b></label>
+        <br>
+        <input type="text" name="url" id="url" style="height:100%;width:500px; padding-top: 10px; padding-bottom: 10px;" required>
+        <br><br>
+        <label><b>Enter an image link for your viewer's reference</b></label>
+        <br>
+        <input type="text" name="image" id="image" style="height:100%;width:500px; padding-top: 10px; padding-bottom: 10px;" required>
+        <br><br>
+       
+        <button style="border:2px solid black; background-color: green; color:white;padding-left: 20px; padding-right: 20px;">Send Blog To Us-></button>
+    <br>
+    <br>
+ 
+        <br><br>
+        
+    </form>
+</div>
+</div>
+</div>
+<script>
+   // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml10 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+.add({
+ targets: '.ml10 .letter',
+ rotateY: [-90, 0],
+ duration: 1300,
+ delay: (el, i) => 45 * i
+}).add({
+ targets: '.ml10',
+ opacity: 0,
+ duration: 1000,
+ easing: "easeOutExpo",
+ delay: 1000
+});
+   </script>
+</body>
+</html>
